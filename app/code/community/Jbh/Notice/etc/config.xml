@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Jbh_Notice for Magento.
+ *
+ * @license Lesser General Public License v3
+ * @author Jacques Bodin-Hullin <jacques@bodin-hullin.net>
+ * @category Jbh
+ * @package Jbh_Notice
+ * @copyright Copyright (c) 2012 Jacques Bodin-Hullin (http://github.com/jacquesbh/NoticeForMagento)
+ */
+-->
+<config>
+    <modules>
+        <Jbh_Notice>
+            <version>0.1.0</version>
+        </Jbh_Notice>
+    </modules>
+    <global>
+        <helpers>
+            <jbh_notice>
+                <class>Jbh_Notice_Helper</class>
+            </jbh_notice>
+        </helpers>
+        <blocks>
+            <jbh_notice>
+                <class>Jbh_Notice_Block</class>
+            </jbh_notice>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <jbh_notice>
+                    <file>jbh_notice.xml</file>
+                </jbh_notice>
+            </updates>
+        </layout>
+    </frontend>
+    <admin />
+    <adminhtml>
+        <layout>
+            <updates>
+                <jbh_notice>
+                    <file>jbh_notice.xml</file>
+                </jbh_notice>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Jbh_Notice>
+                    <files>
+                        <default>Jbh_Notice.csv</default>
+                    </files>
+                </Jbh_Notice>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+        <dev>
+            <jbh_notice>
+                <admin_active>1</admin_active>
+                <admin_message>Production Admin Panel</admin_message>
+                <admin_fg_color>white</admin_fg_color>
+                <admin_bg_color>red</admin_bg_color>
+                <admin_css>position: fixed; z-index: 1000; margin: 0; bottom: 0; right: 0; left: 0; height: 25px; text-align: center; font-size: 15px; line-height: 25px;</admin_css>
+                <frontend_active>0</frontend_active>
+                <frontend_message>Development env.</frontend_message>
+                <frontend_fg_color>blue</frontend_fg_color>
+                <frontend_bg_color>white</frontend_bg_color>
+                <frontend_css>position: fixed; z-index: 1000; bottom: 0; right: 0; left: 0; padding-top: 4px; text-align: center; font-size: 15px; line-height: 20px;</frontend_css>
+            </jbh_notice>
+        </dev>
+    </default>
+</config>

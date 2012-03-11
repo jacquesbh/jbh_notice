@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * This file is part of Jbh_Notice for Magento.
+ *
+ * @license Lesser General Public License v3
+ * @author Jacques Bodin-Hullin <jacques@bodin-hullin.net>
+ * @category Jbh
+ * @package Jbh_Notice
+ * @copyright Copyright (c) 2012 Jacques Bodin-Hullin (http://github.com/jacquesbh/NoticeForMagento)
+ */
+-->
+<config>
+    <modules>
+        <Jbh_Notice>
+            <active>true</active>
+                <codePool>community</codePool>
+            <depends/>
+        </Jbh_Notice>
+    </modules>
+</config>

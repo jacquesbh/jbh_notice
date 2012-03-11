@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * This file is part of Jbh_Notice for Magento.
+ *
+ * @license Lesser General Public License v3
+ * @author Jacques Bodin-Hullin <jacques@bodin-hullin.net>
+ * @category Jbh
+ * @package Jbh_Notice
+ * @copyright Copyright (c) 2012 Jacques Bodin-Hullin (http://github.com/jacquesbh/NoticeForMagento)
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="before_body_end">
+            <block type="jbh_notice/notice" name="jbh_notice" alias="jbh_notice" />
+        </reference>
+    </default>
+</layout>
